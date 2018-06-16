@@ -1,0 +1,16 @@
+<div class="col-md-6">
+  <div class="well">
+    <% @completed.each do |i| %>
+    <h1> <%=i.description %> </h1>
+    <h3> <%=i.completed %>  </h3>
+    <% end %>
+  </div>
+</div>
+<div class="col-md-6">
+  <div class="well">
+    <% @false.each do |i| %>
+    <h1> <%= i.description %> </h1>
+    <h3> <%=i.completed %>  </h3>
+    <% end %>
+  </div>
+</div>
